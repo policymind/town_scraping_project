@@ -29,11 +29,15 @@ We will target **regular** bylaws first, and we can incorporate other policy typ
 
 
 ## Goal: modular code
- Success criteria: A module for each scenario that accepts a `URL,` creates **one** pdf file, and returns the path to the pdf file.
+ Success criteria: A module for each scenario that accepts a `URL,` creates **one** file, saves file, and returns the path to the pdf file.
 
 ```
 def municode(policy_url: str)-> path:
-  ###
+  """
+  function to scrape all content from target municode link
+  """
+
+  
   return pdf_path
 ```
 Each subdirectory of this repo contains:
@@ -48,6 +52,10 @@ Each subdirectory of this repo contains:
  - When you're ready, create a pull request to your repo's main branch and add me as a reviewer. Within the pull request, include either:
    - A link to a jupyter notebook that neatly explains how you researched this and what you are proposing based on this research (this is what will stand out in your portfolio!)
    - Tables and images in the pull request body explain your reasoning, with links to where your analysis code is stored
+
+## KEY QUESTIONS:
+> How should multiple files(pdfs/html) be handled? combined? concatted?
+
 If you think we're missing something, let me know! Use issues and discussions.
 
 
