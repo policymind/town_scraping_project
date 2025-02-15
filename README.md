@@ -29,7 +29,9 @@ We will target **regular** bylaws first, and we can incorporate other policy typ
 
 
 ## Goal: modular code
- Success criteria: A module for each scenario that accepts a `URL,` creates **one** file, saves file, and returns the path to the pdf file.
+ Success criteria: A module for each scenario that accepts a `URL,` creates **one** file, saves file, and returns the path to the  file.
+
+:raised_hand: **UPDATE** : The most desired format for LLM pre-vectoring is _markdown_
 
 ```
 def municode(policy_url: str)-> path:
@@ -38,7 +40,7 @@ def municode(policy_url: str)-> path:
   """
 
   
-  return pdf_path
+  return file_path
 ```
 Each subdirectory of this repo contains:
  - fuller description of the task
